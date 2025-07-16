@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   e2logs:
   - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2025-07-16T11:36:02.614927701Z"
+    description: A Helm chart to distribute the project e2logs
+    digest: c20a653cd90fd1b851099b5e9ea6b355db1c4460bd10f03523b0cb8bdfb044af
+    icon: https://example.com/icon.png
+    name: e2logs
+    type: application
+    urls:
+    - https://github.com/paragor/e2logs/releases/download/e2logs-0.2.1/e2logs-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2025-07-16T11:30:58.787460709Z"
     description: A Helm chart to distribute the project e2logs
@@ -23,4 +34,4 @@ entries:
     urls:
     - https://github.com/paragor/e2logs/releases/download/e2logs-0.1.0/e2logs-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-16T11:30:58.787475006Z"
+generated: "2025-07-16T11:36:02.614935947Z"
