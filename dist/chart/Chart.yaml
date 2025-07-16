@@ -2,6 +2,8 @@ apiVersion: v2
 name: e2logs
 description: A Helm chart to distribute the project e2logs
 type: application
+# it will be updated via GitHub Actions
 version: 0.1.0
+# it will be updated via GitHub Actions
 appVersion: "0.1.0"
 icon: "https://example.com/icon.png"

@@ -16,18 +16,14 @@ spec:
     metadata:
       annotations:
         kubectl.kubernetes.io/default-container: manager
-        {{- if and .Values.controllerManager.pod .Values.controllerManager.pod.annotations }}
-        {{- range $key, $value := .Values.controllerManager.pod.annotations }}
-        {{ $key }}: {{ $value }}
-        {{- end }}
+        {{- with .Values.controllerManager.pod.annotations }}
+        {{- toYaml . | nindent 8 }}
         {{- end }}
       labels:
         {{- include "chart.labels" . | nindent 8 }}
         control-plane: controller-manager
-        {{- if and .Values.controllerManager.pod .Values.controllerManager.pod.labels }}
-        {{- range $key, $value := .Values.controllerManager.pod.labels }}
-        {{ $key }}: {{ $value }}
-        {{- end }}
+        {{- with .Values.controllerManager.pod.labels }}
+        {{- toYaml . | nindent 8 }}
         {{- end }}
     spec:
       containers:
