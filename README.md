@@ -2,12 +2,12 @@
 Read and log k8s events in json format.
 
 ## Description
-K8s have a greate tool for debugging - event system, but there is luck of handling such events in common monitoring system.
-Project `e2logs` help to handle events - it just listen events, as `kubectl events -w` does, and put event to stdout log
+K8s has a greate tool for debugging - event system, but there is luck of handling such events in common monitoring system.
+Project `e2logs` helps to handle events - it just listens events, as `kubectl events -w` does, and puts event to stdout log
 in json format. 
 
 You can find structure or event at [internal/controller/event_controller.go:56](internal/controller/event_controller.go).
-To separate k8s events log from another logs you can filter by field `logger==k8s_events_logger` in your logger collector.
+To separate k8s events log from another logs you can filter by field `logger==k8s_events_logger` in your log`s collector.
 
 Example of event:
 ```
