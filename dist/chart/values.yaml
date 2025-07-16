@@ -6,7 +6,7 @@ controllerManager:
     labels: {}
   container:
     image:
-      repository: controller
+      repository: ghcr.io/paragor/e2logs
       # Overrides the image tag whose default is the chart.
       tag: ""
     args:
